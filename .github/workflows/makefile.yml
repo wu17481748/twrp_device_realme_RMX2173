@@ -1,6 +1,5 @@
 name: Makefile CI
 
-on:
  workflow_dispatch:
   inputs:
 
