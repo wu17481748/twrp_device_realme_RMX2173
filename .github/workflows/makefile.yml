@@ -1,13 +1,15 @@
 name: Makefile CI
+on:
+  watch:
+    types: [started]
 
- workflow_dispatch:
-  inputs:
+  workflow_dispatch:
 
-   jobs:
+jobs:
   build:
-
+    name: Build Kernel by ${{ github.actor }}
     runs-on: ubuntu-latest
-
+    
     steps:
     - uses: actions/checkout@v3
 
